@@ -7,8 +7,8 @@ import java.util.HashMap;
 public class ClientHandler implements Runnable {
 
     // Array list of all the threads handling clients so each message can be sent to the client the thread is handling.
-    private static Game game = new Game();
-    private static ArrayList<Game> games = new ArrayList<>();
+    private Game game = new Game();
+    private ArrayList<Game> games = new ArrayList<>();
 
     int num = 0;
     // Socket for a connection, buffer reader and writer for receiving and sending data respectively.
